@@ -1,4 +1,4 @@
-package edu.pe.cibiertec.runners;
+package edu.pe.cibertec.runners;
 
 import org.junit.platform.suite.api.ConfigurationParameter;
 import org.junit.platform.suite.api.IncludeEngines;
