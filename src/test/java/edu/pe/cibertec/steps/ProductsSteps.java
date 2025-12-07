@@ -24,6 +24,7 @@ public class ProductsSteps {
     @When("envio una peticion GET a productos")
     public void envioUnaPeticionGETAProductos(){
         response = SerenityRest.given()
+                .header("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15")
                 .baseUri(BASE_URL)
                 .when()
                 .get("/products");
@@ -32,6 +33,7 @@ public class ProductsSteps {
     @When("envio una perticion GET al producto con ID {int}")
     public void envioUnaPeticionGETAProductosConID( int id){
         response = SerenityRest.given()
+                .header("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15")
                 .baseUri(BASE_URL)
                 .when()
                 .get("/products/"+id);
